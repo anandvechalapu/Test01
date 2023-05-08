@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Trigger>
+ 
+    <Story ID="US_Validate_Policy" Type="Policy Validation">
+        <AcceptanceCriteria>
+            <Criteria ID="CR_Min_Max_SA">
+                <Description>The system should apply minimum and maximum sum assured, minimum and maximum age limits as defined for each product and master level.</Description>
+            </Criteria>
+            <Criteria ID="CR_Income_Limit">
+                <Description>The system should not provide insurance coverage for a member whose annual income is less than 40K.</Description>
+            </Criteria>
+            <Criteria ID="CR_SA_Range">
+                <Description>The system should display sum assured ranges of 50K, 1lac, 1.5 lac, and 2 lac to the Bandhan Bank sales personnel for selection.</Description>
+            </Criteria>
+            <Criteria ID="CR_Tenure_Range">
+                <Description>The system should display policy tenure ranges of 12, 15, 18, and 24 months to the Bandhan Bank sales personnel for selection.</Description>
+            </Criteria>
+            <Criteria ID="CR_Spouse_Coverage">
+                <Description>If a member is not eligible for insurance coverage, their spouse will also not receive coverage.</Description>
+            </Criteria>
+            <Criteria ID="CR_OTP_Auth">
+                <Description>The system should not provide insurance coverage to the member if the OTP authentication is not received from the Bandhan Bank sales personnel.</Description>
+            </Criteria>
+        </AcceptanceCriteria>
+    </Story>
+
+</Trigger>
